@@ -1,0 +1,22 @@
+/* fooddetails.css */
+.main_conatiner_fooddetails {
+  
+    width: 100%;
+}
+
+.child_conatiner_fooddetails {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 60vh;
+    width: 30%;
+    margin: 0 auto; 
+    margin-top: 40px;
+    background-color: #DAD9F9;
+}
+.name_child{
+
+   padding: 30px;
+    margin: 10px;
+}
+.food_list{
+    margin: 30px;
+}

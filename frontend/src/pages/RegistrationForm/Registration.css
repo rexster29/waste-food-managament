@@ -1,0 +1,344 @@
+.registrationContainer {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px; */
+  padding-block: 20px;
+  padding-left: 20px;
+  background-color: #f9f9f9;
+}
+
+.formSection {
+  flex: 1;
+  padding: 20px;
+  /* background-color: #fff; */
+  border-radius: 8px;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.profilePhotoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-bottom: 20px; */
+  margin-bottom: 8vh;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftInfo {
+  width: 18vw;
+  font-size: 40px;
+  font-weight: 700;
+  color: #42505c;
+}
+
+.rightInfo {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 17px;
+  width: 20vw;
+}
+
+.tac {
+  color: blue;
+}
+
+.profileImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profilePlaceholder {
+  width: 136px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #e0e0e0; */
+  border-radius: 50%;
+  cursor: pointer;
+  color: #555;
+  /* gap: 10px; */
+}
+
+.defaultProfileIcon {
+  width: 100px;
+  height: auto;
+}
+
+.uploadProfileImg {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.removeProfileImg {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 20px;
+}
+
+.inputGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inputGroup input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.userTypeSection {
+  margin: 20px 0;
+}
+
+.userTypeButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.userTypeButtons button {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.userTypeButtons .selected {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.termsAndProceed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.termsCheckbox {
+  display: flex;
+  align-items: center;
+}
+
+.proceedButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.locationButton {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  height: 100%;
+}
+
+.locationButton:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.locationButton.active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.locationButton:focus {
+  outline: 1px transparent;
+}
+
+.locationButton:before {
+  display: none;
+}
+
+.locationButton:-webkit-details-marker {
+  display: none;
+}
+
+.imageSection {
+  flex: 0.5;
+  /* padding: 20px; */
+}
+
+.imageSection img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+@media (max-width: 1024px) {
+  .registrationContainer {
+    /* flex-direction: column; */
+    align-items: center;
+  }
+
+  .formSection {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .imageSection {
+    width: 90%;
+    margin-bottom: 20px;
+    /* display: none; */
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .leftInfo {
+    width: 100%;
+    font-size: 32px;
+  }
+
+  .rightInfo {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .inputRow {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .profileImage,
+  .defaultProfileIcon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .uploadProfileImg,
+  .removeProfileImg {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .registrationContainer {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .formSection {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .imageSection {
+    width: 100%;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .leftInfo {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .rightInfo {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .inputRow {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profileImage,
+  .defaultProfileIcon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .uploadProfileImg,
+  .removeProfileImg {
+    font-size: 10px;
+  }
+
+  .userTypeButtons {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .proceedButton {
+    width: 30%;
+    text-align: center;
+  }
+}

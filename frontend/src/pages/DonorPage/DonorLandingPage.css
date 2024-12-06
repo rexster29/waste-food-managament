@@ -1,0 +1,80 @@
+.Child_conatiner_DonorPage{
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+    background-color: #3B4359;
+}
+.Profile_section{
+padding: 80px;
+}
+.Profile_details_section{
+   padding: 120px;
+}
+.image_profile{
+    border-radius: 200px;
+    height: 20vh;
+   
+}
+.Profile_details_section h1{
+    color: #fff;
+    font-size:55px;
+}
+/* ads section */
+.Ads_conatiner{
+    display: flex;
+   margin-top: 10px;
+  justify-content: space-between;
+  padding: 40px;
+
+
+  }
+  .Ads_image{
+    height: 20vh;
+  }
+  /* 3rd section  */
+  .exp_donot{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Button_donor{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-left: 190px;
+    margin-top: 80px;
+  }
+  .donor_details{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-right: 190px;
+    max-width: 600px;
+  }
+.dis_image{
+    height: 25vh;
+    width: 25vh;
+    margin-left: 150px;
+}
+.button-5 {
+    background: #0A142F; 
+    color: white;
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 40px;
+    border: none; 
+    font-size: 16px; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   
+}
+
+
+
+/* here button */
+
+
+/* CSS */

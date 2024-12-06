@@ -1,0 +1,180 @@
+footer {
+    background-color: #0A122A;
+    color: white;
+    font-size: 14px;
+    padding: 20px 10px;
+    /* Adjust padding for more flexibility */
+}
+
+.text_overcom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.text_overcom h1 {
+    font-size: 32px;
+    margin-top: 40px;
+    line-height: 1.4;
+}
+
+.footer_button_vol_do {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    /* Allows buttons to wrap on smaller screens */
+}
+
+.volunteer_button,
+.donate_button {
+    padding: 10px 20px;
+    background-color: #0A122A;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.volunteer_button:hover {
+    background-color: #fff;
+    color: #0A122A;
+}
+
+.donate_button {
+    background-color: #fff;
+    color: #0A122A;
+}
+
+.donate_button:hover {
+    background-color: #0A122A;
+    color: #fff;
+}
+
+.content_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 220px;
+    padding: 20px 0;
+    max-width: 1800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    padding: 10px;
+    min-width: 150px;
+    text-align: center;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Copy_right Section */
+.copy_right {
+    display: flex;
+    justify-content: center;
+    background-color: #0A122A;
+    border-top: 1px solid white;
+    padding: 10px;
+}
+
+.copy_right h1 {
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .text_overcom h1 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .volunteer_button,
+    .donate_button {
+        width: 45%;
+        /* Adjust button size on smaller screens */
+        font-size: 14px;
+    }
+
+    .content_footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        /* Each section takes full width on mobile */
+        text-align: center;
+        /* Center text for better readability */
+    }
+
+    .copy_right h1 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content_footer {
+        padding: 10px;
+        max-width: 90%;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content_footer {
+        padding: 5px;
+        max-width: 95%;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .volunteer_button,
+    .donate_button {
+        width: 80%;
+    }
+
+    .text_overcom h1 {
+        font-size: 20px;
+    }
+}

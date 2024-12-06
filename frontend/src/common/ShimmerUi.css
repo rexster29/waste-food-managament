@@ -1,0 +1,92 @@
+.main_card {
+    display: flex;
+    justify-content: space-between;
+    gap: 49px;
+}
+
+.card {
+    -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    border-radius: 6px;
+    height: 360px;
+    width: 750px;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Shimmer Background Effect */
+.shimmerBG {
+    animation-duration: 1.8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: shimmer;
+    animation-timing-function: linear;
+    background: #ddd;
+    background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+    background-size: 1200px 100%;
+    position: relative;
+}
+
+/* Media Section (Placeholder for Image) */
+.media {
+    height: 200px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 6px 6px 0 0;
+}
+
+/* Shimmer Animation */
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1200px 0;
+    }
+    100% {
+        background-position: 1200px 0;
+    }
+}
+
+/* Padding and Structure */
+.p-32 {
+    padding: 32px;
+}
+
+/* Title Shimmer */
+.title-line {
+    height: 24px;
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+}
+
+/* Content Shimmer */
+.content-line {
+    height: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+}
+
+/* Smaller Content Line */
+.end {
+    width: 40%;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+}
+
+/* Margin Utilities */
+.m-t-24 {
+    margin-top: 24px;
+}

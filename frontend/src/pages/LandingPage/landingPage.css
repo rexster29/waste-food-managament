@@ -1,0 +1,340 @@
+.Landing_page_main_conatiner {
+  width: 100%;
+}
+
+.image_content_conatiner {
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 90px;
+  color: white;
+  width: 100%;
+}
+
+.image_text {
+  max-width: 1200px;
+}
+
+.image_text h1 {
+  color: rgb(229, 225, 225);
+  margin-bottom: 10px;
+  font-size: 90px;
+}
+
+.image_text p {
+  color: aliceblue;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.Button_on_image {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  gap: 10px;
+}
+
+/* CSS for buttons */
+.button-9, .button-19 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #040273;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s, box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 25%;
+}
+
+.button-9:hover, .button-19:hover {
+  background-color: #020269;
+}
+
+.button-9:disabled, .button-19:disabled {
+  cursor: default;
+}
+
+.button-9:focus, .button-19:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+/* Ads image set */
+.Ads_conatiner {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.Ads_image {
+  height: 20vh;
+}
+
+/* What to do section */
+.what_to_do_text {
+  max-width: 800px;
+  padding: 120px;
+  margin-top: 100px;
+}
+
+.what_to_do {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-around;
+}
+
+.what_to_do_explain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.what_to_do_1st_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.image_text_ads {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.each_image_ads {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0.5px 0px;
+}
+
+.each_image_ads:hover {
+  background-color: #020269;
+  color: #fff;
+  border-radius: 30px;
+}
+
+.image_logo {
+  height: 15vh;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.b_donor {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.mobile-app-link {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1000;
+  border-radius: 15px;
+  color: white;
+  background-color: #757373;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  font-weight: 500;
+  opacity: 4;
+}
+
+.icon-app-link img {
+  margin: 0 5px;
+  width: 40px;
+  height: auto;
+}
+
+.icon-app-link img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 868px) {
+  .what_to_do_text {
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .image_text_ads {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .each_image_ads {
+    max-width: 90%;
+  }
+
+  .what_to_do {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-around;
+  }
+
+  .image_text {
+    max-width: 972px;
+  }
+
+  .image_text h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+
+  .image_text p {
+    font-size: 16px;
+  }
+
+  .Ads_conatiner {
+    gap: 10px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .Ads_image {
+    height: 16vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .image_text {
+    max-width: 972px;
+  }
+
+  .image_text h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+
+  .image_text p {
+    font-size: 14px;
+  }
+
+  .Button_on_image button {
+    font-size: 12px;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .icon-app-link img {
+    width: 35px;
+  }
+}
+
+/* Ads carousel styles */
+.ads-carousel {
+  width: 100%; 
+  overflow: hidden; 
+  position: relative; 
+}
+
+.ads-track {
+  display: flex;
+  animation: scroll 20s linear infinite; 
+  animation-play-state: running; 
+}
+
+.ads-image {
+  width: 20%; 
+  flex-shrink: 0; 
+  object-fit: cover; 
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+/* Animation to scroll images from right to left */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+
+/* Additional media queries for laptop sizes */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .image_text h1 {
+    font-size: 70px;
+  }
+
+  .Button_on_image {
+    flex-direction: row;
+    margin-top: 60px;
+  }
+
+  .Button_on_image button {
+    width: 100%;
+  }
+
+  .Ads_conatiner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .what_to_do {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .image_text h1 {
+    font-size: 80px;
+  }
+
+  .Button_on_image {
+    margin-top: 70px;
+  }
+
+  .what_to_do {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+  }
+
+  .Ads_conatiner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1441px) {
+  .image_text h1 {
+    font-size: 90px;
+  }
+}

@@ -1,0 +1,237 @@
+.About_main_container {
+  height: auto;
+  width: auto;
+}
+
+.child_about_main_container {
+  display: flex;
+  background-color: #4d566f;
+  justify-content: space-around;
+}
+.text_about{
+    font-size: 70px;
+    color: #ffff;
+}
+.content_text p{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.text_about1{
+    font-size: 75px;
+    color: #ed7d0e;
+}
+.food-image{
+    height: 70vh;
+    width: auto;
+
+}
+.content_text{
+ padding: 80px;
+}
+.button_donate_volunteer{
+    display: flex;
+    gap: 50px;
+    padding: 30px;
+}
+.donated_button{
+    padding: 10px;
+    width: 30%;
+    color: #ffff;
+    font-size: 20px;
+    background-color: rgb(241, 98, 3);
+    border: 1px solid rgb(241, 98, 3);
+}
+
+/* mission section */
+.mission_child_food{
+    display: flex;
+    padding: 90px;
+    justify-content: space-around;
+}
+.text_mission{
+    text-align: center;
+    padding: 20px;
+    font-size: 65px;
+    color: #ed7d0e;
+    font-weight: 600;
+
+}
+.mission_content{
+    width: 600px;
+}
+.mission_content p{
+    font-size: 20px;
+}
+.mission_content h1{
+    color: rgb(1, 38, 63);
+    font-size: 25px;
+}
+.mission_image{
+    height: 40vh;
+    filter: brightness(85%);
+}
+/* how it's work */
+.How_it_work h1{
+    text-align: center;
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.How_it_work{
+    width: 1900px;
+}
+
+.How_it_work p{
+    text-align: center;
+}
+@media screen and (min-width: 769px) and (max-width: 1300px) {
+    .text_about{
+        font-size: 35px;
+        color: #ffff;
+    }
+    .content_text p{
+        color: #ffff;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .text_about1{
+        font-size: 43px;
+        color: #ed7d0e;
+    }
+    .food-image{
+        height: 40vh;
+        width: auto;
+    
+    }
+    .content_text{
+        padding: 70px;
+       }
+     .button_donate_volunteer{
+        display: flex;
+        gap: 50px;
+        padding: 6px;
+    }
+    .donated_button{
+        padding: 8px;
+        width: auto;
+        color: #ffff;
+        font-size: 17px;
+        background-color: rgb(241, 98, 3);
+        border: 1px solid rgb(241, 98, 3);
+    }
+
+    /* mission section */
+.mission_child_food{
+    display: flex;
+    padding: 90px;
+    justify-content: space-around;
+}
+.text_mission{
+    text-align: center;
+    padding: 20px;
+    font-size: 55px;
+    color: #ed7d0e;
+    font-weight: 600;
+
+}
+.mission_content{
+    width: 600px;
+}
+.mission_content p{
+    font-size: 15px;
+}
+.mission_content h1{
+    color: rgb(1, 38, 63);
+    font-size: 25px;
+}
+.mission_image{
+    height: 40vh;
+    filter: brightness(85%);
+}
+/* how it's work */
+.How_it_work h1{
+    text-align: center;
+    font-size: 65px;
+    font-weight: 600;
+}
+}
+@media screen and (max-width: 768px) {
+    .content_text {
+        width: 100%;
+    }
+
+    .text_about, .text_about1 {
+        font-size: 40px;
+    }
+
+    .content_text p {
+        font-size: 16px;
+    }
+
+    .button_donate_volunteer {
+        width: 100%;
+    }
+
+    .button_donate_volunteer .donated_button {
+        width: 70%;
+        font-size: 16px;
+    }
+
+    .set_image_food {
+        width: 0%;
+    }
+
+    .set_image_food img {
+        width: 0%;
+    }
+
+    .mission_conatiner {
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .text_mission {
+        font-size: 40px;
+    }
+
+    .mission_child_food {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .image_mission_div img {
+        width: 95%;
+    }
+
+    .image_mission_div h1 {
+        font-size: 24px;
+    }
+
+    .mission_content {
+        width: 100%;
+    }
+
+    .mission_content h1{
+        font-size: 16px;
+    }
+
+    .mission_content p {
+        word-wrap: break-word;
+        font-size: 14px;
+    }
+
+    .How_it_work h1{
+        /* text-align: center; */
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    .How_it_work{
+        width: 972px;
+    }
+    
+    .How_it_work p{
+        text-align: left;
+    }
+}

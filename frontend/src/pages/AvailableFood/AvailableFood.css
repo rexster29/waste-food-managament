@@ -1,0 +1,234 @@
+/* Content Wrapper */
+.content_wrapper {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 5%; 
+  width: 100%;
+  flex-wrap: wrap; 
+  margin-bottom: 20px;
+}
+
+/* Sidebar Filters */
+.filter_sidebar {
+  width: 20%; 
+  background-color: #ffffff;
+  padding: 0px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.filter_sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.filter_menu {
+  list-style: none;
+}
+
+.filter_menu li {
+  position: relative; /* Make the list item the containing block for the pseudo-element */
+  padding-left: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  margin: 1px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.filter_menu li:hover {
+  background-color: #e0e0e0;
+  color: rgb(5, 141, 169);
+}
+
+.filter_menu > .selected {
+  background-color: #e0e0e0;
+  color: rgb(5, 141, 169);
+}
+
+.filter_menu li:hover::before {
+  content: ''; 
+  position: absolute;
+  left: 0; 
+  top: 0;
+  height: 100%; 
+  width: 5px; 
+  background-color: #0e58c8; 
+  border-radius: 5px 0 0 5px; 
+}
+.filter_menu {
+  list-style: none;
+}
+/* Grid Content Area */
+
+.grid_content_area {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  width: 75%; 
+}
+
+/* Individual Grid Item (Box) */
+.item_grid {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item_grid:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.item_image {
+  width: 100%;
+  height: 150px;
+  background-color: #ccc; 
+}
+
+.item_content {
+  padding: 15px;
+}
+
+.item_title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+
+}
+.text{
+  color: black;
+
+  
+}
+
+.item_description {
+  font-size: 14px;
+  color: #555;
+}
+
+.donation-contact-button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(135, 236, 236);
+}
+
+/* Responsive Breakpoints */
+
+/* Small devices (mobile phones) */
+@media (max-width: 600px) {
+  .content_wrapper {
+    padding: 0 3%;
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .filter_sidebar {
+    width: 100%; /* Full width for mobile */
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0; /* Add bottom border */
+  }
+
+  .grid_content_area {
+    width: 100%; /* Full width for mobile */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid for smaller screens */
+    grid-gap: 10px; /* Reduce gap between grid items */
+  }
+
+  .item_grid {
+    padding: 10px; /* Reduce padding for mobile */
+   
+  }
+
+  .item_image {
+    height: 120px; /* Reduce image height for mobile */
+  }
+
+  .item_title {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+
+  .item_description {
+    font-size: 12px; /* Smaller description font for mobile */
+  }
+
+  .donation-contact-button {
+    padding: 8px 16px;
+    font-size: 10px;
+  }
+}
+
+/* Tablets (between 600px and 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .content_wrapper {
+    padding: 0 4%;
+  }
+
+  .filter_sidebar {
+    width: 100%; /* Full width for tablets */
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .grid_content_area {
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid for tablets */
+    grid-gap: 15px;
+  }
+
+  .item_image {
+    height: 140px; /* Slightly reduce image height */
+  }
+
+  .item_title {
+    font-size: 17px;
+  }
+
+  .item_description {
+    font-size: 13px;
+  }
+
+  .donation-contact-button {
+    padding: 9px 18px;
+    font-size: 12px;
+  }
+}
+
+/* Large devices (desktops and large screens) */
+@media (min-width: 1025px) {
+  .content_wrapper {
+    padding: 0 10%; /* More padding for large screens */
+  }
+
+  .filter_sidebar {
+    width: 20%; /* Sidebar stays the same on large screens */
+  }
+
+  .grid_content_area {
+    width: 75%; /* Grid area stays the same on large screens */
+  }
+
+  .item_image {
+    height: 150px; /* Default image height */
+  }
+
+  .item_title {
+    font-size: 18px;
+  }
+
+  .item_description {
+    font-size: 14px;
+  }
+}
+
+

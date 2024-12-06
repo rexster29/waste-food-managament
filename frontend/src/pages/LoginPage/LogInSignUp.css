@@ -1,0 +1,177 @@
+/* .logInSignUpContainer {
+  background-color: #1d1d1f;
+  height: 100vh;
+} */
+.logInSignUpContainer {
+  /* background-color: #1d1d1f; */
+  background-image: url(../../assets/login_bg.jpg);
+  color: white; /* Optional: Change text color for better readability */
+  padding: 20px;
+  /* border-radius: 8px; Optional: Styling for a better look */
+  width: 100%; /* Adjust as needed */
+  height: 100vh; /* Adjust as needed */
+}
+
+.log_p {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.headers_P {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.headers_P h7 {
+  color: #898889;
+}
+
+.logInType {
+  margin: 20px 0;
+}
+
+.radiobutton {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.insideRadioButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greenText {
+  color: #00ff00;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.inputFieldButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 63vw;
+  margin-top: 100px;
+  gap: 50px;
+}
+
+.phoneNumberSection,
+.otpSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.phoneNumberSection input,
+.otpSection input {
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 380px;
+  border-radius: 4px;
+  font-size: 18px;
+  background-color: #d9e7fc;
+  color: #898889;
+  border: none;
+  font-weight: 600;
+}
+
+.socialSignUp {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 20px;
+  flex-direction: column;
+  width: 380px;
+}
+
+.socialSignUp button {
+  color: #898889;
+  font-weight: 600;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  /* height: 15vh; */
+  gap: 10px;
+}
+.socialLogo{
+  height: auto;
+    width: 34px;
+}
+.googleSignUp div{
+  font-size: 20px;
+}
+
+.googleSignUp,
+.facebookSignUp {
+  padding: 15px;
+  cursor: pointer;
+  border: 2px solid; /* Set the border width */
+  border-image: linear-gradient(to right, #a9a5fd, #ebd75d) 1;
+  margin-bottom: 10px;
+  background-color: #d9e7fc;
+}
+
+.button_verify_OTP {
+  background: linear-gradient(to right, #a9a5fd 0%, #ebd75d 100%);
+  border: none;
+  border-radius: 4px; /* Adjust the border radius as needed */
+  padding: 15px; /* Adjust padding for desired size */
+  color: #ffffff; /* Text color */
+  font-size: 16px; /* Adjust font size */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 380px;
+  color: black;
+  font-weight: 700;
+}
+
+.button_verify_OTP:hover {
+  background: linear-gradient(to right, #ebd75d 0%, #a9a5fd 100%);
+}
+
+.button_verify_OTP p,
+.button_verify_OTP .fa-arrow-right {
+  margin: 0;
+  background: transparent;
+  color: black;
+  font-weight: 700;
+}
+
+@media (max-width: 1300px) {
+  .phoneNumberSection input,
+  .otpSection input {
+    width: 300px;
+  }
+  .button_verify_OTP {
+    width: 300px;
+  }
+  .socialSignUp {
+    width: 300px;
+  }
+}
+
+@media (max-width: 994px) {
+  .inputFieldButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+    margin-top: 50px;
+  }
+  .logInSignUpContainer {
+    height: 100vh;
+  }
+}
