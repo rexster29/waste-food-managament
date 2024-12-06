@@ -1,0 +1,48 @@
+{
+  "name": "waste-food-management-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-redis": "redis-server",
+    "dev-frontend": "cd frontend && npm run dev",
+    "dev-backend": "nodemon backend/src/server.js",
+    "build": "npm-run-all -s build-frontend-soulshare build-backend-soulshare",
+    "build-frontend-soulshare": "cd frontend && npm run build",
+    "build-backend-soulshare": "npm install && webpack --config webpack.production.config.js --mode production",
+    "start-backend-soulshare": "node ./dist/backend/main.js",
+    "start-frontend-soulshare": "cd frontend && npm run preview",
+    "start-soulshare": "npm-run-all -p start-backend-soulshare start-frontend-soulshare"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "babel-loader": "^9.2.1",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs-extra": "^11.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "nodemailer": "^6.9.15",
+    "nouislider": "^15.8.1",
+    "npm-run-all": "^4.1.5",
+    "path": "^0.12.7",
+    "pg": "^8.12.0",
+    "react-toastify": "^10.0.5",
+    "sequelize": "^6.37.3",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack-node-externals": "^3.0.0",
+    "winston": "^3.14.2",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "webpack-cli": "^5.1.4"
+  }
+}
