@@ -1,10 +1,10 @@
 ----------------------------------------
-SOUL FOOD WASTE MANAGEMENT APPLICATION
+FOOD WASTE MANAGEMENT APPLICATION
 ----------------------------------------
 DATE - 25/08/2024
 
 OBJECTIVE -
-    The SOUL Food Waste Management System aims to reduce food waste by connecting food businesses,
+    The Food Waste Management System aims to reduce food waste by connecting food businesses,
     individual donors, charities, and volunteers. It provides tools for listing surplus food, 
     matching it with charities, and coordinating the logistics of food donations.
 
